@@ -3,7 +3,6 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 20px;
-    background: url('caminho/para/sua/imagem.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
