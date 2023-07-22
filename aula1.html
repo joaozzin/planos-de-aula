@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aula 1: Conjuntos e Operações com Conjuntos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Aula 1: Conjuntos e Operações com Conjuntos</h1>
+
+    <h2>Objetivos da aula:</h2>
+    <ul>
+        <li>Introduzir o conceito de conjuntos e sua representação.</li>
+        <li>Compreender as operações básicas com conjuntos: união, interseção e diferença.</li>
+    </ul>
+
+    <h2>Parte 1: Introdução aos Conjuntos</h2>
+    <p><strong>Conjuntos:</strong> Um conjunto é uma coleção de elementos que compartilham uma característica em comum.</p>
+    <p>Exemplo: O conjunto dos números pares: {2, 4, 6, 8, ...}</p>
+    <p>Exemplo: O conjunto das vogais: {'a', 'e', 'i', 'o', 'u'}</p>
+
+    <p><strong>Representação de Conjuntos:</strong> Os conjuntos podem ser representados de duas formas:</p>
+    <ul>
+        <li><strong>Enumeração:</strong> Listando os elementos entre chaves. Exemplo: {1, 3, 5, 7}</li>
+        <li><strong>Descrição:</strong> Descrevendo as propriedades dos elementos. Exemplo: {x | x é um número primo}</li>
+    </ul>
+
+    <h2>Parte 2: Tipos de Conjuntos e Operações</h2>
+    <p><strong>Tipos de Conjuntos:</strong></p>
+    <ul>
+        <li><strong>Conjunto Vazio:</strong> É um conjunto que não possui elementos. Representação: {} ou ∅.</li>
+        <li><strong>Conjunto Unitário:</strong> É um conjunto que possui apenas um elemento. Exemplo: {2} ou {a}.</li>
+        <li><strong>Conjunto Finito:</strong> É um conjunto com um número finito de elementos.</li>
+        <li><strong>Conjunto Infinito:</strong> É um conjunto com um número infinito de elementos.</li>
+    </ul>
+
+    <p><strong>Operações com Conjuntos:</strong></p>
+    <ul>
+        <li><strong>União:</strong> A união de dois conjuntos A e B é o conjunto que contém todos os elementos de A e B, sem repetição.</li>
+        <li><strong>Interseção:</strong> A interseção de dois conjuntos A e B é o conjunto que contém os elementos que estão presentes em ambos os conjuntos.</li>
+        <li><strong>Diferença:</strong> A diferença entre os conjuntos A e B é o conjunto que contém os elementos de A que não estão em B.</li>
+    </ul>
+
+    <p><strong>Exemplo:</strong></p>
+    <p>A = {1, 2, 3, 4} e B = {3, 4, 5, 6}</p>
+    <ul>
+        <li><strong>União (A ∪ B):</strong> {1, 2, 3, 4, 5, 6}</li>
+        <li><strong>Interseção (A ∩ B):</strong> {3, 4}</li>
+        <li><strong>Diferença (A - B):</strong> {1, 2}</li>
+    </ul>
+
+    <h2>Parte 3: Aplicação e Exercícios</h2>
+    <p><strong>Exercício 1:</strong> Dados os conjuntos A = {1, 2, 3, 4, 5} e B = {3, 4, 5, 6, 7}, determine:</p>
+    <ul>
+        <li>a) A união de A e B;</li>
+        <li>b) A interseção de A e B;</li>
+        <li>c) A diferença entre A e B.</li>
+    </ul>
+
+    <p><strong>Exercício 2:</strong> Considere os conjuntos C = {a, b, c, d} e D = {c, d, e, f}. Encontre:</p>
+    <ul>
+        <li>a) A união de C e D;</li>
+        <li>b) A interseção de C e D;</li>
+        <li>c) A diferença entre C e D.</li>
+    </ul>
+
+    <p><strong>Exercício 3:</strong> Em uma pesquisa com 50 alunos, verificou-se que 30 gostam de Matemática e 25 gostam de Física. Determine:</p>
+    <ul>
+        <li>a) O número de alunos que gostam tanto de Matemática quanto de Física;</li>
+        <li>b) O número de alunos que gostam apenas de Matemática;</li>
+        <li>c) O número de alunos que gostam apenas de Física;</li>
+        <li>d) O número de alunos que não gostam nem de Matemática nem de Física.</li>
+    </ul>
+
+    <h2>Encerramento:</h2>
+    <p><strong>Revisão Rápida:</strong></p>
+    <ul>
+        <li>Identifique três conjuntos diferentes em sua casa ou ambiente e represente-os por enumeração.</li>
+        <li>Escolha dois desses conjuntos e aplique as operações de união, interseção e diferença entre eles.</li>
+        <li>Descreva um conjunto vazio, um conjunto unitário, um conjunto finito e um conjunto infinito.</li>
+    </ul>
+
+    <h2>Tarefa:</h2>
+    <p>Para praticar as operações com conjuntos, resolva o seguinte problema:</p>
+    <p>Em uma escola, foram entrevistados 100 alunos sobre suas preferências em relação a três matérias: Matemática (M), Português (P) e Ciências (C).</p>
+    <p>Os resultados mostraram que 60 alunos gostam de Matemática, 70 gostam de Português e 50 gostam de Ciências. Além disso, 30 alunos gostam tanto de Matemática quanto de Português, 20 gostam de Matemática e Ciências, e 25 gostam de Português e Ciências. E por fim, 15 alunos gostam das três matérias.</p>
+    <p>Quantos alunos gostam apenas de uma matéria e não das outras duas?</p>
+    <p>Resolva o problema usando operações com conjuntos e apresente a resposta na próxima aula.</p>
+
+    <a href="index.html">Voltar para o Índice</a>
+
+    <!-- Script para impressão -->
+    <script>
+        document.addEventListener("keydown", function(e) {
+            if ((window.navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey) && e.key === "p") {
+                e.preventDefault();
+                window.print();
+            }
+        });
+    </script>
+
+</body>
+</html>
