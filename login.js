@@ -26,9 +26,13 @@ usuariosRef.once("value", (snapshot) => {
 
 // Função para verificar as credenciais
 function verificarCredenciais() {
-    const nome = document.getElementById("nome").value;
-    const senha = document.getElementById("senha").value;
+    var nome = document.getElementById("nome").value;
+    var senha = document.getElementById("senha").value;
 
+    nome = nome.replace(/\s/g, "").toLowerCase();
+    senha = senha.replace(/\s/g, "").toLowerCase();
+
+    console.log(nome,senha)
     // Verifica se o usuário e senha correspondem a algum usuário na array
     const usuarioEncontrado = usuarios.find((usuario) => usuario.nome === nome && usuario.senha === senha);
 
@@ -37,9 +41,13 @@ function verificarCredenciais() {
         if (usuarioEncontrado.tipo === "adm") {
             // Caso o tipo seja administrador, redireciona para a página índice.html
             window.location.href = "indice.html";
-        } else if (usuarioEncontrado.tipo === "estudante") {
-            // Caso o tipo seja estudante, redireciona para a página planodeaula.html
+        } else if (usuarioEncontrado.tipo === "lilian") {
+            // Caso o tipo seja lilian, redireciona para a página planodeaula.html
             window.location.href = "planodeaula.html";
+        }
+        else if (usuarioEncontrado.tipo === "ana") {
+            // Caso o tipo seja ana, redireciona para a página planodeaulaanas.html
+            window.location.href = "planodeaulaanas.html";
         }
     } else {
         // Caso as credenciais sejam inválidas, exibe uma mensagem de erro
